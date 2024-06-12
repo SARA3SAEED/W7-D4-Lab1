@@ -6,9 +6,13 @@ import './App.css'
 function App() {
   let [count, setCount] = useState(0)
   const [name1, setName] = useState("sara")
+
+
   const [num1, setNum1] = useState(3);
   const [num2, setNum2] = useState(4);
   const [sum, setSum] = useState(null);
+
+
   const [sub, setSub] = useState(null);
   const [mul, setMul] = useState(null);
   const [divi, setDivi] = useState(null);
@@ -53,12 +57,10 @@ function App() {
     <input  type="number"  
     value={num1} 
     className='num1 m-3 bg-black text-white' 
-    onChange={(e) => setNum1(Number(e.target.value))}
     />
     <input type="number"  
     value={num2} 
     className='num2 m-3 bg-black text-white' 
-    onChange={(e) => setNum2(Number(e.target.value))}
 
     />
     <button className='m-3' onClick={addNum}>click of Add</button>
